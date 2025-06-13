@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+/* Custom styles */
+.nav-link {
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  transform: translateY(-1px);
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+.AboutUsImage{ 
+  width: 550px;
+ 
+  object-fit: cover;
+}
+.touble{
+  background-image: url('../public/contact-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+  width: 100%;
+}
