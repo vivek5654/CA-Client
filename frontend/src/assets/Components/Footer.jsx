@@ -5,14 +5,13 @@ import {
   MapPin, 
   Clock,
   Globe,
-  Facebook, 
-  Twitter, 
-  Instagram, 
-  Linkedin,
+  Linkedin, 
+  Twitter,
   Sparkles,
   Building2,
   Award,
-  Shield
+  Shield,
+  ArrowRight
 } from 'lucide-react'
 
 const Footer = () => {
@@ -54,10 +53,8 @@ const Footer = () => {
   ]
 
   const socialLinks = [
-    { name: 'Facebook', icon: Facebook, href: '#facebook', color: 'hover:text-blue-500' },
-    { name: 'Twitter', icon: Twitter, href: '#twitter', color: 'hover:text-sky-400' },
-    { name: 'Instagram', icon: Instagram, href: '#instagram', color: 'hover:text-pink-500' },
-    { name: 'LinkedIn', icon: Linkedin, href: '#linkedin', color: 'hover:text-blue-600' }
+    { name: 'LinkedIn', icon: Linkedin, href: '#linkedin', color: 'hover:text-blue-600' },
+    { name: 'Twitter', icon: Twitter, href: '#twitter', color: 'hover:text-blue-400' }
   ]
 
   const companyInfo = [

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Mail, Phone, MapPin, Clock, Send, CheckCircle, AlertCircle, Facebook, Twitter, Instagram, Linkedin, Calculator, FileText, TrendingUp } from 'lucide-react';
+import { Mail, Phone, MapPin, Clock, Send, CheckCircle, AlertCircle, Twitter, Linkedin, Calculator, FileText, TrendingUp } from 'lucide-react';
 
 const Contactus = () => {
   const [formData, setFormData] = useState({
@@ -165,23 +165,35 @@ const Contactus = () => {
             </div>
 
             {/* Social Media */}
-            <div className="bg-white rounded-2xl p-8 shadow-xl">
-              <h3 className="text-2xl font-bold text-gray-800 mb-6">Connect With Us</h3>
-              <div className="flex space-x-4">
-                {[
-                  { icon: Facebook, color: 'from-blue-600 to-blue-700', href: '#' },
-                  { icon: Twitter, color: 'from-blue-400 to-blue-600', href: '#' },
-                  { icon: Instagram, color: 'from-pink-500 to-purple-600', href: '#' },
-                  { icon: Linkedin, color: 'from-blue-700 to-blue-800', href: '#' }
-                ].map((social, index) => (
-                  <a
-                    key={index}
-                    href={social.href}
-                    className={`w-12 h-12 bg-gradient-to-r ${social.color} rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform duration-300`}
-                  >
-                    <social.icon className="w-6 h-6" />
-                  </a>
-                ))}
+            <div className="py-16 px-6 lg:px-12">
+              <div className="max-w-7xl mx-auto">
+                <div className="text-center mb-12">
+                  <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                    Connect With Us
+                  </h2>
+                  <p className="text-xl text-gray-600">
+                    Follow us on social media for updates and insights
+                  </p>
+                </div>
+
+                <div className="flex justify-center gap-6">
+                  {[
+                    { icon: Twitter, color: 'from-blue-400 to-blue-500', href: '#' },
+                    { icon: Linkedin, color: 'from-blue-600 to-blue-700', href: '#' }
+                  ].map((social, index) => {
+                    const IconComponent = social.icon
+                    return (
+                      <a
+                        key={index}
+                        href={social.href}
+                        className={`p-4 bg-gradient-to-r ${social.color} rounded-full text-white 
+                          hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300`}
+                      >
+                        <IconComponent className="w-6 h-6" />
+                      </a>
+                    )
+                  })}
+                </div>
               </div>
             </div>
           </div>

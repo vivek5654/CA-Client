@@ -210,10 +210,10 @@ const HomeComponent = () => {
           <div className='grid grid-cols-1 md:grid-cols-3 gap-8 text-center'>
             <div className='group hover:scale-105 transition-transform duration-300'>
               <div className='text-4xl font-bold mb-2 bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent'>
-                99.8%
+                98%
               </div>
               <p className='text-gray-300 group-hover:text-white transition-colors duration-300'>
-                Accuracy Rate
+                Client Satisfaction
               </p>
             </div>
             <div className='group hover:scale-105 transition-transform duration-300'>

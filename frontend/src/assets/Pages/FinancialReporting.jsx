@@ -61,9 +61,9 @@ const FinancialReporting = () => {
     },
     {
       title: "Compliance Assurance", 
-      description: "100% regulatory compliance",
+      description: "High regulatory compliance standards",
       icon: Shield,
-      percentage: "100%"
+      percentage: "98%"
     },
     {
       title: "Time Savings",
@@ -162,15 +162,12 @@ const FinancialReporting = () => {
               </p>
 
               <div className='flex flex-wrap gap-4'>
-                <button className={`px-8 py-4 bg-gradient-to-r ${serviceColor} text-white font-semibold rounded-lg 
-                  shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300`}>
-                  Get Started
-                  <ArrowRight className='ml-2 w-5 h-5 inline' />
-                </button>
+                
+                <Link to="/contact">
                 <button className='px-8 py-4 border-2 border-purple-600 text-purple-600 font-semibold rounded-lg 
                   hover:bg-purple-600 hover:text-white transition-all duration-300'>
                   Schedule Consultation
-                </button>
+                </button></Link>
               </div>
             </div>
 
@@ -376,11 +373,11 @@ const FinancialReporting = () => {
                 <div className='space-y-4'>
                   <div className='flex justify-between items-center'>
                     <span className='text-gray-600'>Report Accuracy</span>
-                    <span className='font-bold text-purple-600'>99.9%</span>
+                    <span className='font-bold text-purple-600'>98%</span>
                   </div>
                   <div className='flex justify-between items-center'>
                     <span className='text-gray-600'>On-time Delivery</span>
-                    <span className='font-bold text-purple-600'>100%</span>
+                    <span className='font-bold text-purple-600'>98%</span>
                   </div>
                   <div className='flex justify-between items-center'>
                     <span className='text-gray-600'>Client Satisfaction</span>
@@ -406,15 +403,13 @@ const FinancialReporting = () => {
               Schedule your consultation today.
             </p>
             <div className='flex flex-col sm:flex-row gap-4 justify-center'>
+              <Link to="/contact">
               <button className='px-8 py-4 bg-white text-purple-600 font-bold rounded-lg 
                 hover:bg-gray-50 transform hover:-translate-y-1 transition-all duration-300 shadow-lg'>
                 Schedule Consultation
                 <Calendar className='ml-2 w-5 h-5 inline' />
-              </button>
-              <button className='px-8 py-4 border-2 border-white text-white font-bold rounded-lg 
-                hover:bg-white hover:text-purple-600 transition-all duration-300'>
-                Download Reporting Guide
-              </button>
+              </button></Link>
+              
             </div>
           </div>
         </div>

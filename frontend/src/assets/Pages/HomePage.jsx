@@ -27,7 +27,7 @@ const HomePage = (props) => {
   const stats = [
     { icon: Users, number: "500+", label: "Happy Clients" },
     { icon: Award, number: "15+", label: "Years Experience" },
-    { icon: Shield, number: "100%", label: "Compliance Rate" },
+    { icon: Shield, number: "98%", label: "Compliance Rate" },
     { icon: TrendingUp, number: "₹50Cr+", label: "Managed Assets" }
   ]
 

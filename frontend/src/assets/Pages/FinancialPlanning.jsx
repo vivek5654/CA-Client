@@ -142,15 +142,12 @@ import { Link } from 'react-router-dom'
               </p>
 
               <div className='flex flex-wrap gap-4'>
-                <button className={`px-8 py-4 bg-gradient-to-r ${serviceColor} text-white font-semibold rounded-lg 
-                  shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300`}>
-                  Get Started Today
-                  <ArrowRight className='ml-2 w-5 h-5 inline' />
-                </button>
+                
+                <Link to="/contact">
                 <button className='px-8 py-4 border-2 border-blue-600 text-blue-600 font-semibold rounded-lg 
                   hover:bg-blue-600 hover:text-white transition-all duration-300'>
                   Schedule Consultation
-                </button>
+                </button></Link>
               </div>
             </div>
 
@@ -335,15 +332,14 @@ import { Link } from 'react-router-dom'
               Schedule your free consultation today.
             </p>
             <div className='flex flex-col sm:flex-row gap-4 justify-center'>
+              <Link to="/contact">
+              
               <button className='px-8 py-4 bg-white text-blue-600 font-bold rounded-lg 
                 hover:bg-gray-50 transform hover:-translate-y-1 transition-all duration-300 shadow-lg'>
                 Schedule Free Consultation
                 <Calendar className='ml-2 w-5 h-5 inline' />
-              </button>
-              <button className='px-8 py-4 border-2 border-white text-white font-bold rounded-lg 
-                hover:bg-white hover:text-blue-600 transition-all duration-300'>
-                Download Planning Guide
-              </button>
+              </button></Link>
+              
             </div>
           </div>
         </div>

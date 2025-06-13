@@ -61,9 +61,9 @@ const TaxConsultation = () => {
     },
     {
       title: "Compliance Assurance", 
-      description: "100% accuracy in filing with zero penalties",
-      percentage: "100%",
-      metric: "Accuracy Rate"
+      description: "Expert tax filing with minimal risk of penalties",
+      percentage: "98%",
+      metric: "Success Rate"
     },
     {
       title: "Time Savings",
@@ -162,15 +162,13 @@ const TaxConsultation = () => {
               </p>
 
               <div className='flex flex-wrap gap-4'>
+                <Link to="/contact">
                 <button className={`px-8 py-4 bg-gradient-to-r ${serviceColor} text-white font-semibold rounded-lg 
                   shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300`}>
                   Start Tax Planning
                   <ArrowRight className='ml-2 w-5 h-5 inline' />
-                </button>
-                <button className='px-8 py-4 border-2 border-emerald-600 text-emerald-600 font-semibold rounded-lg 
-                  hover:bg-emerald-600 hover:text-white transition-all duration-300'>
-                  Get Tax Estimate
-                </button>
+                </button></Link>
+                
               </div>
             </div>
 
@@ -184,8 +182,8 @@ const TaxConsultation = () => {
                     <span className='text-2xl font-bold text-white'>30%</span>
                   </div>
                   <div className='flex justify-between items-center text-emerald-100'>
-                    <span>Filing Accuracy</span>
-                    <span className='text-2xl font-bold text-white'>100%</span>
+                    <span>Filing Success Rate</span>
+                    <span className='text-2xl font-bold text-white'>98%</span>
                   </div>
                   <div className='flex justify-between items-center text-emerald-100'>
                     <span>Client Satisfaction</span>
@@ -405,15 +403,13 @@ const TaxConsultation = () => {
               that saves you money and ensures compliance.
             </p>
             <div className='flex flex-col sm:flex-row gap-4 justify-center'>
+              <Link to="/contact">
               <button className='px-8 py-4 bg-white text-emerald-600 font-bold rounded-lg 
                 hover:bg-gray-50 transform hover:-translate-y-1 transition-all duration-300 shadow-lg'>
                 Schedule Tax Consultation
                 <Calendar className='ml-2 w-5 h-5 inline' />
-              </button>
-              <button className='px-8 py-4 border-2 border-white text-white font-bold rounded-lg 
-                hover:bg-white hover:text-emerald-600 transition-all duration-300'>
-                Download Tax Checklist
-              </button>
+              </button></Link>
+              
             </div>
           </div>
         </div>

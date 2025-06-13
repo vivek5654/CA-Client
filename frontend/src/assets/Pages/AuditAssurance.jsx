@@ -172,15 +172,12 @@ const AuditAssurance = () => {
               </p>
 
               <div className='flex flex-wrap gap-4'>
-                <button className={`px-8 py-4 bg-gradient-to-r ${serviceColor} text-white font-semibold rounded-lg 
-                  shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300`}>
-                  Request Audit Quote
-                  <ArrowRight className='ml-2 w-5 h-5 inline' />
-                </button>
+                
+                <Link to="/contact">
                 <button className='px-8 py-4 border-2 border-indigo-600 text-indigo-600 font-semibold rounded-lg 
                   hover:bg-indigo-600 hover:text-white transition-all duration-300'>
                   Schedule Consultation
-                </button>
+                </button></Link>
               </div>
             </div>
 
@@ -190,8 +187,8 @@ const AuditAssurance = () => {
                 <h3 className='text-2xl font-bold text-white mb-4'>Audit Excellence</h3>
                 <div className='space-y-4'>
                   <div className='flex justify-between items-center text-indigo-100'>
-                    <span>Audit Accuracy</span>
-                    <span className='text-2xl font-bold text-white'>99.9%</span>
+                    <span>Audit Success Rate</span>
+                    <span className='text-2xl font-bold text-white'>98%</span>
                   </div>
                   <div className='flex justify-between items-center text-indigo-100'>
                     <span>Client Retention</span>
@@ -409,15 +406,13 @@ const AuditAssurance = () => {
               Schedule your audit consultation today.
             </p>
             <div className='flex flex-col sm:flex-row gap-4 justify-center'>
+              <Link to="/contact">
               <button className='px-8 py-4 bg-white text-indigo-600 font-bold rounded-lg 
                 hover:bg-gray-50 transform hover:-translate-y-1 transition-all duration-300 shadow-lg'>
                 Schedule Audit Consultation
                 <Calendar className='ml-2 w-5 h-5 inline' />
-              </button>
-              <button className='px-8 py-4 border-2 border-white text-white font-bold rounded-lg 
-                hover:bg-white hover:text-indigo-600 transition-all duration-300'>
-                Download Audit Guide
-              </button>
+              </button></Link>
+              
             </div>
           </div>
         </div>
